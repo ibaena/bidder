@@ -1,0 +1,5 @@
+<input type="checkbox"
+     readOnly={true}
+     checked={this.props.budget.complete}
+     onClick={this.toggleChecked.bind(this)} />
+   {status}

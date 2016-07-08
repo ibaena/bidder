@@ -20,7 +20,7 @@ export default class Home extends TrackerReact(Component) {
 
         <nav >
           <div className="nav-wrapper black">
-            <a href="#" className="brand-logo">CVG Calculator</a>
+            <a href="#" className="brand-logo">VCG Calculator</a>
             <div id="login" className="right">
               <AccountsUI />
             </div>
