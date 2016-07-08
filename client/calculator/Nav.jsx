@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
+import AccountsUI from './AccountsUi.jsx';
 
 export default class Home extends TrackerReact(Component) {
 
@@ -16,18 +17,17 @@ export default class Home extends TrackerReact(Component) {
 
   render() {
     return (
-      <div id="wrapper">
-        <nav>
+
+        <nav >
           <div className="nav-wrapper black">
-            <a href="#" className="brand-logo">CVG Calc</a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
-              <li><a href="sass.html">Sass</a></li>
-              <li><a href="badges.html">Components</a></li>
-              <li><a href="collapsible.html">JavaScript</a></li>
-            </ul>
+            <a href="#" className="brand-logo">CVG Calculator</a>
+            <div id="login" className="right">
+              <AccountsUI />
+            </div>
           </div>
         </nav>
-      </div>
+
+
     )
   }
 }

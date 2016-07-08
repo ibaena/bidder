@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
+import BudgetForm from './BudgetForm.jsx'
 
 export default class Home extends TrackerReact(Component) {
 
@@ -17,7 +18,9 @@ export default class Home extends TrackerReact(Component) {
   render() {
     return (
       <div id="wrapper">
-
+        <div className="container">
+          <BudgetForm/>
+        </div>
       </div>
     )
   }
