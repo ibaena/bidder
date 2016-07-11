@@ -19,10 +19,8 @@ export default class Footer extends TrackerReact(Component) {
   render() {
     return (
       <footer className="page-footer black">
-
         <div className="footer-copyright">
-          <div className="container">
-          </div>
+
         </div>
       </footer>
     )

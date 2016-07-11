@@ -4,11 +4,13 @@ import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
 import Nav from '../calculator/Nav.jsx';
 import Footer from '../calculator/Footer.jsx';
+import SideNav from '../calculator/SideNav.jsx';
 
 export const MainLayout = ({content}) => (
 
     <div className="wrapper-main">
-        <Nav />
+
+        <SideNav />
     <main>
       {content}
     </main>

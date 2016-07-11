@@ -35,9 +35,10 @@ export default class Home extends TrackerReact(Component) {
   render() {
     return (
       <div id="wrapper">
+
         <div className="container">
           <BudgetForm/>
-            <table className="striped">
+            <table className="striped responsive-table">
               <thead>
                 <tr>
                   <th data-field="client">Client</th>

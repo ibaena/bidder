@@ -18,14 +18,11 @@ export default class Home extends TrackerReact(Component) {
   render() {
     return (
 
-        <nav >
-          <div className="nav-wrapper black">
-            <a href="#" className="brand-logo">VCG Calculator</a>
-            <div id="login" className="right">
-              <AccountsUI />
-            </div>
-          </div>
-        </nav>
+      <nav className="transparent hide-on-large-only">
+        <div className="nav-wrapper">
+           <a href="#" data-activates="slide-out" className="button-collapse right black-text" id="burger-mobile"><i className="mdi-navigation-menu"></i></a>
+        </div>
+      </nav>
 
 
     )
