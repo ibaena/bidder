@@ -1,3 +1,6 @@
+let bitbucketUrl = 'https://api.bitbucket.org/2.0/repositories/visioncreativegroup?access_token=';
+let bbOAuthUrl = 'https://bitbucket.org/site/oauth2/authorize?client_id=XUz9D2BhTEKACjj3A6&response_type=token';
+
 
 Meteor.methods({
   addBudget(query) {
@@ -33,4 +36,13 @@ Meteor.methods({
     }
     Budget.remove(budget._id);
   },
+
+  getRepos: function(){
+    let user = Meteor.user();
+    let bitToken = user.services.bitbucket.accessToken;
+
+    this.unblock();
+
+    return HTTP.get(bitbucketUrl + bitToken , {});
+  }
 });
