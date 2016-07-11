@@ -45,15 +45,15 @@ export default class BudgetForm extends Component {
                 </div>
 
                 <div className="input-field col l2 m2 s12" id="rate-box">
-                  <input  id="rate" type="text" placeholder="Rate"  ref="rate" required />
+                  <input  id="rate" type="number" placeholder="Rate"  ref="rate" required />
                 </div>
 
                 <div className="input-field col l2 m2 s12" id="hours-box">
-                  <input  id="hours" type="text" placeholder="Total Hours"  ref="hours" required />
+                  <input  id="hours" type="number" placeholder="Total Hours"  ref="hours" required />
                 </div>
 
                 <div className="input-field col l2 m2 s12" id="clientDate-box">
-                  <input  id="dueDate" type="text" placeholder="Client Date"  ref="dueDate" required />
+                  <input  id="dueDate" type="date" placeholder="Client Date"  ref="dueDate" required />
                 </div>
 
                 <div className="input-field col l2 m2 s12" id="btn">

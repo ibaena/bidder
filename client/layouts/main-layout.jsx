@@ -12,7 +12,11 @@ export const MainLayout = ({content}) => (
     <main>
       {content}
     </main>
+
+    <footer>
         <Footer />
+    </footer>
+
 
 </div>
 

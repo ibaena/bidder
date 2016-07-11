@@ -17,12 +17,12 @@ export default class BudgetSingle extends Component {
 
 
             <tr>
-              <td><a href={`/budget/${this.props.budget._id}`}>{this.props.budget.client}</a></td>
+              <td><a href={`/budget/${this.props.budget.job}`}>{this.props.budget.client}</a></td>
               <td>{this.props.budget.job}</td>
               <td>$ {this.props.budget.rate}</td>
               <td>{this.props.budget.hours}</td>
               <td>{this.props.budget.dueDate}</td>
-              <td>$$$$</td>
+              <td>$ {this.props.budget.rate * this.props.budget.hours}</td>
               <td>
                 <a className="btn-floating btn-large waves-effect waves-light red"
                    onClick={this.deleteBudget.bind(this)}>

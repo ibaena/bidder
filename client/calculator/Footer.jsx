@@ -18,25 +18,13 @@ export default class Footer extends TrackerReact(Component) {
 
   render() {
     return (
-      <div className="section black" id="footer">
-        <div className="container">
-          <div className="row">
-            <div className="col l8 offset-l2 s12">
+      <footer className="page-footer black">
 
-
-            </div>
-            <div className="col l8 offset-l2   s12">
-
-            </div>
-          </div>
-        </div>
         <div className="footer-copyright">
-          <div className="container white-text">
-          © 2016 Ivan Baena
+          <div className="container">
           </div>
         </div>
-      </div>
-
+      </footer>
     )
   }
 }
