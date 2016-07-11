@@ -36,16 +36,21 @@ export default class Git extends TrackerReact(Component) {
 
       <div className="showGit container">
         <p>LIst all repos</p>
-        <ul>
+         <ul className="collection">
 
           {
             this.state.bitbucket.map((data) => {
               console.log(data);
-              return <li key={data.name}>{data.name}</li>
+              return <li className="collection-item avatar" key={data.name}>
+                      <img src={data.links.avatar.href} alt="" className="circle" />
+                      <span>Name: {data.name} </span> <br />
+                      <span>Description: {data.description}</span> <br />
+                      <a href={data.website}><span>Launch site</span></a>
+                    </li>
             })
           }
 
-    </ul>
+        </ul>
       </div>
 
     )
